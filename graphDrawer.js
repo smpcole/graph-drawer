@@ -1,3 +1,13 @@
+/* Return an object with the following members:
+ * - n: the number of vertices
+ * - hasEdge(i, j): function which returns true iff. ij is an edge
+ * - canvas: an HTML 5 canvas element
+ * - position(i): determine the position of vertex i on the canvas
+ * - timeInterval: the amount of time it takes to draw a vertex or edge
+ * - showVertices: if true, display the vertices as dots
+ * - draw(): start drawing the graph
+ * - stop(): stop drawing the graph
+ */
 var graphDrawer = function(n, hasEdge, canvas, position, timeInterval, showVertices) {
 	var drawer = {
 		n: n, 
