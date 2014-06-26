@@ -65,7 +65,7 @@ var graphDrawer = function(n, hasEdge, canvas, position, timeInterval, showVerti
 		timer = setInterval(drawNext, drawer.timeInterval);
 	};
 
-    drawer.stop = function() {
+	drawer.stop = function() {
 		clearInterval(timer);
 	}
 
