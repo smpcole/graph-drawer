@@ -73,7 +73,7 @@ var graphDrawer = function(n, hasEdge, canvas, position, timeInterval, showVerti
 
 	drawer.stop = function() {
 		clearInterval(timer);
-	}
+	};
 
 	return drawer;
 };
