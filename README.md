@@ -16,3 +16,4 @@ which returns an object with the following properties:
 * `showVertices`: if true, display the vertices as dots
 * `draw()`: start drawing the graph
 * `stop()`: stop drawing the graph
+* `reset()`: start over from the beginning next time a vertex/edge would be drawn

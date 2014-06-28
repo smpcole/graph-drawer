@@ -7,6 +7,7 @@
  * - showVertices: if true, display the vertices as dots
  * - draw(): start drawing the graph
  * - stop(): stop drawing the graph
+ * - reset(): start over from the beginning next time a vertex/edge would be drawn
  */
 var graphDrawer = function(n, hasEdge, canvas, position, timeInterval, showVertices) {
 	var drawer = {
@@ -63,6 +64,11 @@ var graphDrawer = function(n, hasEdge, canvas, position, timeInterval, showVerti
 	var timer = null;
 	drawer.draw = function() {
 		timer = setInterval(drawNext, drawer.timeInterval);
+	};
+
+	drawer.reset = function() {
+		i = j = 0;
+		verticesDrawn = false;
 	};
 
 	drawer.stop = function() {
